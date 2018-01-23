@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UI Samples</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="basic_coordinator">Basic Coordinator</string>
+    <string name="card_name">Miho Nishizumi</string>
+    <string name="card_message">
+        I am Miho Nishizumi.
+        I belong to in Oarai Girl\'s School.
+        I usually play sensha-do as team captain there.  It is so exciting.
+        My favorite doll is Boko.
+        Nice to meet you.
+    </string>
+    <string name="card_account_id">\@panzer_vor</string>
+</resources>

@@ -1,7 +1,12 @@
 package com.example.shikibu.ui_samples
 
-/**
- * Created by shikibu on 2018/02/27.
- */
-class ExampleModel {
-}
+import io.realm.RealmObject
+import io.realm.annotations.PrimaryKey
+import io.realm.annotations.RealmClass
+
+@RealmClass
+open class ExampleModel(
+    @PrimaryKey var id: Long = 0,
+    var title: String = "",
+    var detail: String = ""
+): RealmObject(){}

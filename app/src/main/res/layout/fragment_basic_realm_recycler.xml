@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.shikibu.ui_samples.RecyclerViewFragment"
+    tools:showIn="@layout/activity_basic_realm_recycler">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/basic_recycler_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/realm_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:listitem="row_basic_recycler_view"/>
 
 </RelativeLayout>

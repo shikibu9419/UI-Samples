@@ -23,6 +23,10 @@
             android:name=".BasicCoordinatorActivity"
             android:label="@string/basic_coordinator"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".BasicRecyclerViewActivity"
+            android:label="@string/basic_recycler_view"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

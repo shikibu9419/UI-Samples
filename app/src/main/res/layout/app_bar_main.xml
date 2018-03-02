@@ -23,6 +23,7 @@
 
     <TextView
         android:text="UI-List is here."
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

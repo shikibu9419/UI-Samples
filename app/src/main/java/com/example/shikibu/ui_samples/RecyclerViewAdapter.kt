@@ -27,11 +27,11 @@ internal class RecyclerViewAdapter(data: OrderedRealmCollection<ExampleModel>)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val obj = getItem(position)
-        holder.data = obj
+        val item = getItem(position)
+        holder.data = item
 
-        holder.title.text = obj!!.title
-        holder.detail.text = obj.detail
+        holder.title.text = item!!.title
+        holder.detail.text = item.detail
     }
 
     internal inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

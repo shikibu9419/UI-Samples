@@ -18,4 +18,6 @@
     <string name="card_account_id">\@panzer_vor</string>
 
     <string name="basic_recycler_view">Basic Realm Recycler View</string>
+
+    <string name="basic_tab_host">Basic Tab Host View</string>
 </resources>

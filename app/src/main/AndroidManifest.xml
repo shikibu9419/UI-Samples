@@ -27,6 +27,10 @@
             android:name=".BasicRecyclerViewActivity"
             android:label="@string/basic_recycler_view"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".BasicTabHostActivity"
+            android:label="@string/basic_tab_host"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

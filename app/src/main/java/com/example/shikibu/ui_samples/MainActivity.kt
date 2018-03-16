@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val intent = when (item.itemId) {
             R.id.nav_basic_coordinator -> Intent(this, BasicCoordinatorActivity::class.java)
             R.id.nav_basic_realm_recycler -> Intent(this, BasicRecyclerViewActivity::class.java)
+            R.id.nav_basic_tab_host -> Intent(this, BasicTabHostActivity::class.java)
             else -> return false
         }
 

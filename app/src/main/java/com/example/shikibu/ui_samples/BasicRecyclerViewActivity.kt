@@ -19,10 +19,10 @@ class BasicRecyclerViewActivity : AppCompatActivity() {
 
     private fun addData() {
         Realm.getDefaultInstance().use { realm ->
-            val data = ExampleModel()
+            val data = Model()
 
             if(!realm.isEmpty) {
-                data.id = realm.where(ExampleModel::class.java).max("id")!!.toLong() + 1
+                data.id = realm.where(Model::class.java).max("id")!!.toLong() + 1
             }
 
             data.title = "Title ${data.id}"
@@ -31,7 +31,7 @@ class BasicRecyclerViewActivity : AppCompatActivity() {
             realm.executeTransaction {
                 it.copyToRealmOrUpdate(data)
 
-                it.where(ExampleModel::class.java).findAll().forEach {
+                it.where(Model::class.java).findAll().forEach {
                     Log.d("HOGE", "${it.id}: ${it.title}, ${it.detail}")
                 }
             }

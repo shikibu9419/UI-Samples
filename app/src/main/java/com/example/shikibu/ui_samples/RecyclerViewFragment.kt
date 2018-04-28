@@ -16,7 +16,7 @@ import io.realm.RealmResults
 class RecyclerViewFragment: Fragment() {
 
     private lateinit var mRealm: Realm
-    private lateinit var results: RealmResults<ExampleModel>
+    private lateinit var results: RealmResults<Model>
 
     private inner class TouchHelperCallback internal constructor() : ItemTouchHelper.SimpleCallback(
             ItemTouchHelper.UP or ItemTouchHelper.DOWN, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
@@ -54,7 +54,7 @@ class RecyclerViewFragment: Fragment() {
     private fun setUpRecyclerView() {
         val recyclerView = view.findViewById<View>(R.id.realm_recycler_view) as RecyclerView
 
-        results = mRealm.where(ExampleModel::class.java).findAll()
+        results = mRealm.where(Model::class.java).findAll()
 
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = RecyclerViewAdapter(results)

@@ -9,8 +9,8 @@ import io.realm.OrderedRealmCollection
 import io.realm.RealmRecyclerViewAdapter
 
 
-internal class RecyclerViewAdapter(data: OrderedRealmCollection<ExampleModel>)
-    : RealmRecyclerViewAdapter<ExampleModel, RecyclerViewAdapter.ViewHolder>(data, true) {
+internal class RecyclerViewAdapter(data: OrderedRealmCollection<Model>)
+    : RealmRecyclerViewAdapter<Model, RecyclerViewAdapter.ViewHolder>(data, true) {
 
     init {
         setHasStableIds(true)
@@ -34,10 +34,16 @@ internal class RecyclerViewAdapter(data: OrderedRealmCollection<ExampleModel>)
         holder.detail.text = item.detail
     }
 
+//    internal inner class ViewHolder(val binding: FragmentBasicRealmRecyclerBinding) : RecyclerView.ViewHolder(binding.root) {
+//        fun bind(item: Item) {
+//            binding.item = item
+//        }
+//    }
+
     internal inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var title: TextView
         var detail: TextView
-        var data: ExampleModel? = null
+        var data: Model? = null
 
         init {
             title = view.findViewById(R.id.row_title)
